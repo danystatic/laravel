@@ -5,9 +5,9 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
+                <div class="panel-heading">Registro</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/registro') }}">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -33,6 +33,20 @@
                                 @if ($errors->has('email'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('sponsor') ? ' has-error' : '' }}">
+                            <label for="sponsor" class="col-md-4 control-label">Sponsor Email</label>
+
+                            <div class="col-md-6">
+                                <input id="sponsor" type="sponsor" class="form-control" name="sponsor" value="{{ old('sponsor') }}" required>
+
+                                @if ($errors->has('sponsor'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('sponsor') }}</strong>
                                     </span>
                                 @endif
                             </div>

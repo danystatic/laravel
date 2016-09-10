@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Helpers\Viewhelper;
+
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -23,6 +26,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+            $array['countdownline']=Viewhelper::countdownline();
+        $array['getdomain']=Viewhelper::getdomain();
+
+    $dtreegoodview = Viewhelper::dtreegoodview(Auth::id());
+
+    return view('testtree2')->with('array',$array)->with('lazyusers','usuarios sin invitaciones')->with('dtreegoodview',$dtreegoodview);
+
+        $array['countdownline']=Viewhelper::countdownline();
+        $array['getdomain']=Viewhelper::getdomain();
+        return view('home')->with('array', $array);
     }
 }
