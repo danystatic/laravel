@@ -109,17 +109,17 @@ class ApiController extends Controller
     public function json(Request $request)
     {
 
-    	$input = $request->all();
+    	// $input = $request->all();
 
-    	Feedback::create($input);
+    	// Feedback::create($input);
 
     	//OR test git push default
 
-    	// $feedback = new Feedback;
-    	// $feedback->json 	=$request->json;
-    	// $feedback->key 		=$request->'video-1';
-    	// $feedback->value 	=$request->value;
-    	// $feedback->save();
+    	$feedback = new Feedback;
+    	$feedback->json 	=$request->json;
+    	$feedback->key 		=$request->'video-1';
+    	$feedback->value 	=$request->value;
+    	$feedback->save();
     	return response()->json(['res'=>"success"]);
 
     }
