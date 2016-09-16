@@ -105,9 +105,9 @@ class ApiController extends Controller
     public function json()
     {
 
-    	$input = $request->all();
+    	// $input = $request->all();
 
-    	Feedback::create($input);
+    	// Feedback::create($input);
 
     	//OR
 
