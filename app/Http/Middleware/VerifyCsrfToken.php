@@ -13,6 +13,6 @@ class VerifyCsrfToken extends BaseVerifier
      */
     protected $except = [
         //
-    'callback/*','callback','receivemail'
+    'callback/*','callback','receivemail', 'app-post'
     ];
 }
