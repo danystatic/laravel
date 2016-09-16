@@ -105,12 +105,12 @@ class ApiController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function json()
+    public function json(Request $request)
     {
 
-    	// $input = $request->all();
+    	$input = $request->all();
 
-    	// Feedback::create($input);
+    	Feedback::create($input);
 
     	//OR
 
