@@ -66,7 +66,7 @@ class ApiController extends Controller
 
 
         
-    	return response()->json("I was trying to insert a view, but it has Auth and user Variables. this is pure text");
+    	return response()->json( 'txt': "I was trying to insert a view, but it has Auth and user Variables. this is pure text");
         $array['countdownline']=Viewhelper::countdownline();
         $array['getdomain']=Viewhelper::getdomain();
 
