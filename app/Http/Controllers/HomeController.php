@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Contracts\Routing\ResponseFactory;
 use App\Helpers\Viewhelper;
-
 use Illuminate\Support\Facades\Auth;
+use Illuminate\View\View;
 
 class HomeController extends Controller
 {
@@ -21,10 +22,10 @@ class HomeController extends Controller
         //Log::notice('ViewsController@__construct');
 
         //Log::notice('ViewsController@__construct auth middleware');
-        $this->middleware('auth', ['except' => array('index', 'proyecto', 'contact')]);
+        $this->middleware('auth', ['except' => array('index', 'proyecto', 'apiindex', 'contact')]);
 
         //Log::notice('ViewsController@__construct checksponsor middleware');
-        $this->middleware('checksponsor', ['except' => array('index', 'proyecto', 'contact')]);
+        $this->middleware('checksponsor', ['except' => array('index', 'apiindex' ,'proyecto', 'contact')]);
 
         //Log::notice('after middleware');
         //Log::notice('Visitor &&|| Member??');
@@ -40,18 +41,17 @@ class HomeController extends Controller
      */
     public function index()
     {
-            $array['countdownline']=Viewhelper::countdownline();
+        $array['countdownline']=Viewhelper::countdownline();
         $array['getdomain']=Viewhelper::getdomain();
 
-    $dtreegoodview = Viewhelper::dtreegoodview(Auth::id());
+        $dtreegoodview = Viewhelper::dtreegoodview(Auth::id());
 
-    return view('testtree2')->with('array',$array)->with('lazyusers','usuarios sin invitaciones')->with('dtreegoodview',$dtreegoodview);
+        return view('testtree2')->with('array',$array)->with('lazyusers','usuarios sin invitaciones')->with('dtreegoodview',$dtreegoodview);
 
         $array['countdownline']=Viewhelper::countdownline();
         $array['getdomain']=Viewhelper::getdomain();
         return view('home')->with('array', $array);
     }
-
 
    
     /**

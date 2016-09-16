@@ -22,6 +22,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
+// API CALLS
+
+Route::get('/apihome', 'ApiController@json');
+Route::get('/app-page-2', 'ApiController@page2');
+Route::post('/app-post', 'ApiController@store');
+
 # For Email Tree View
     // $array['countdownline']=Viewhelper::countdownline();
     //     $array['getdomain']=Viewhelper::getdomain();
