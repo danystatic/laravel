@@ -10,7 +10,7 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-
+use App\Feedback;
 // use App\Helpers\Sendmail;
 use App\Helpers\Viewhelper;
 // use App\Mail\Welcome;
@@ -18,7 +18,8 @@ Route::get('/', function () {
 		// Sendmail::verify("danystatic@hotmail.com", '888', 'danystatic', 'danystatic@hotmail.com');
 	  // Mail::to('danystatic@hotmail.com')->send(new Welcome);
 
-
+	$feedback = new Feedback;
+	$feedback->save();
     return view('welcome');
 });
 

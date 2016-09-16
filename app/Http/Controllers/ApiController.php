@@ -117,7 +117,7 @@ class ApiController extends Controller
 
     	$feedback = new Feedback;
     	$feedback->json 	=$request->json;
-    	//$feedback->key 		=$request->key;
+    	$feedback->mykey 		=$request->mykey;
     	$feedback->value 	=$request->value;
     	$feedback->save();
     	return response()->json(['res'=>"success"]);

@@ -20,9 +20,9 @@ class CreateFeedbacksTable extends Migration
             $table->integer('user_id')->nullable();
             $table->string('uuid')->nullable();
             $table->text('json')->nullable();
-            $table->string('key')->nullable();
+            $table->string('mykey')->nullable();
             $table->text('value')->nullable();
-            $table->decimal('payment',16,8);
+            $table->decimal('payment',16,8)->nullable();
             $table->integer('playnumber')->nullable();
             $table->integer('paid')->default(0);
             $table->timestamps();
