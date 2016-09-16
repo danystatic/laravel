@@ -134,19 +134,14 @@ class ApiController extends Controller
     public function store(Request $request)
     {
 
-    	$input = $request->all();
-    	print_r($input);
-    	// dd($input);
-    	Feedback::create($input);
+    	//$input = $request->all();
+    	
 
     	//OR
 
     	$feedback = new Feedback;
-
-var_dump($feedback);
-
     	$feedback->json 	=$request->json;
-    	$feedback->mykey 		=$request->mykey;
+    	$feedback->mykey 	=$request->mykey;
     	$feedback->value 	=$request->value;
     	$feedback->save();
     	return response()->json(['res'=>"success"]);
