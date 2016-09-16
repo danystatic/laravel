@@ -136,6 +136,7 @@ class ApiController extends Controller
 
     	$input = $request->all();
 
+    	// dd($input);
     	Feedback::create($input);
 
     	//OR
