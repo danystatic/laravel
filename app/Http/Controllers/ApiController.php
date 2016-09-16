@@ -112,7 +112,7 @@ class ApiController extends Controller
 
     	Feedback::create($input);
 
-    	//OR
+    	//OR test git push default
 
     	// $feedback = new Feedback;
     	// $feedback->json 	=$request->json;
