@@ -145,7 +145,7 @@ class ApiController extends Controller
     	// $feedback->key 		=$request->'video-1';
     	// $feedback->value 	=$request->value;
     	// $feedback->save();
-    	return response()->json("success");
+    	return response()->json(['res'=>"success"]);
 
     }
 
