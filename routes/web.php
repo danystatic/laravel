@@ -26,9 +26,9 @@ Route::get('/', function () {
 
 // API CALLS
 
-Route::get('/apihome', 'ApiController@json');
-Route::get('/app-page-2', 'ApiController@page2');
-Route::post('/app-post', 'ApiController@store');
+Route::get('/apihome',  array('middleware' => 'cors', 'uses' => 'ApiController@json'));
+Route::get('/app-page-2', array('middleware' => 'cors', 'uses' => 'ApiController@page2'));
+Route::post('/app-post', array('middleware' => 'cors', 'uses' => 'ApiController@store'));
 
 # For Email Tree View
     // $array['countdownline']=Viewhelper::countdownline();
