@@ -11,6 +11,7 @@ use Illuminate\Contracts\Routing\ResponseFactory;
 use App\Helpers\Viewhelper;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
+use App\Feedback;
 
 class ApiController extends Controller
 {
