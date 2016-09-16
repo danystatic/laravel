@@ -115,11 +115,11 @@ class ApiController extends Controller
 
     	//OR test git push default
 
-    	$feedback = new Feedback;
-    	$feedback->json 	=$request->json;
-    	$feedback->key 		=$request->key;
-    	$feedback->value 	=$request->value;
-    	$feedback->save();
+    	// $feedback = new Feedback;
+    	// $feedback->json 	=$request->json;
+    	// $feedback->key 		=$request->key;
+    	// $feedback->value 	=$request->value;
+    	// $feedback->save();
     	return response()->json(['res'=>"success"]);
 
     }
