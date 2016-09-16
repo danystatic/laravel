@@ -135,13 +135,16 @@ class ApiController extends Controller
     {
 
     	$input = $request->all();
-
+    	print_r($input);
     	// dd($input);
     	Feedback::create($input);
 
     	//OR
 
     	$feedback = new Feedback;
+
+var_dump($feedback);
+
     	$feedback->json 	=$request->json;
     	$feedback->mykey 		=$request->mykey;
     	$feedback->value 	=$request->value;
