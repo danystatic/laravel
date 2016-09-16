@@ -18,14 +18,37 @@ Route::get('/', function () {
 		// Sendmail::verify("danystatic@hotmail.com", '888', 'danystatic', 'danystatic@hotmail.com');
 	  // Mail::to('danystatic@hotmail.com')->send(new Welcome);
 
-	$feedback = new Feedback;
-	$feedback->save();
+// Initialize Guzzle client
+// $client = new GuzzleHttp\Client();
+
+// Create a POST request
+// $response = $client->request(
+//     'POST',
+//     'http://bitcoinmerida.dev/app-post',
+//     [
+//         'form_params' => [
+//             'json' => '{"available":true,"platform":"Android","version":"6.0.1","uuid":"eacdde4d56f9841","cordova":"5.1.1","model":"Nexus 5","manufacturer":"LGE","isVirtual":false,"serial":"06d0db6af0e96f19"}',
+//             'mykey' => 'xxxx',
+//             'value' => 'hell'
+//         ]
+//     ]
+// );
+
+// // Parse the response object, e.g. read the headers, body, etc.
+// $headers = $response->getHeaders();
+// $body = $response->getBody();
+
+// // Output headers and body for debugging purposes
+// var_dump($headers, $body);
+// return;
+	// $feedback = new Feedback;
+	// $feedback->save();
     return view('welcome');
 });
 
 
 
-// API CALLS
+// API CALLS 
 
 Route::get('/apihome',  array('middleware' => 'cors', 'uses' => 'ApiController@json'));
 Route::get('/app-page-2', array('middleware' => 'cors', 'uses' => 'ApiController@page2'));

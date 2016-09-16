@@ -133,13 +133,20 @@ class ApiController extends Controller
      */
     public function store(Request $request)
     {
+    	// curl --data "mykey=shittykey&json='jsonjson'&value='singletextlieve'" http://bitcoinmerida.dev/app-post
+    	// curl --data "mykey=shittykey&json='ptu'&value='singletextlieve'" http://bitcoinmerida.dev/app-post
+    	// curl --data "mykey=shittykey&json='{"available":true,"platform":"Android","version":"6.0.1","uuid":"eacdde4d56f9841","cordova":"5.1.1","model":"Nexus 5","manufacturer":"LGE","isVirtual":false,"serial":"06d0db6af0e96f19"}'&value='singletextlieve'" http://bitcoinmerida.dev/app-post
+    	//{"available":true,"platform":"Android","version":"6.0.1","uuid":"eacdde4d56f9841","cordova":"5.1.1","model":"Nexus 5","manufacturer":"LGE","isVirtual":false,"serial":"06d0db6af0e96f19"} 
 
     	//$input = $request->all();
     	
-
+    	// return "hello";	
     	//OR
+    	$json = json_decode($request->json);
 
+    	// dd($json);
     	$feedback = new Feedback;
+    	$feedback->uuid 	=$json->uuid;
     	$feedback->json 	=$request->json;
     	$feedback->mykey 	=$request->mykey;
     	$feedback->value 	=$request->value;
