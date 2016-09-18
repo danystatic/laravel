@@ -66,7 +66,7 @@ class ApiController extends Controller
     {
 
 
-          return response()->json(['txt' => 'I was trying to insert a view, but it has Auth and user Variables. this is pure text']);
+          return response()->json(['txt' => '<h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p>']);
     	// return response()->json(txt : 'I was trying to insert a view, but it has Auth and user Variables. this is pure text');
 
 
