@@ -65,24 +65,10 @@ class ApiController extends Controller
     public function page2()
     {
 
-    	$tree = "<div class='dtree'>
+    	//$tree = '<iframe src="https://docs.google.com/presentation/d/1_cFPZVQEO4ddR-phmETKFt8KIvSP0cSI1FZILmq83Cc/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>';
+    	//return $tree;
 
-    <p><h2><u><a style='font-size:1.3em' class='btn btn-primary' href='javascript: d.openAll();'>Abrir</a></u> | <u><a style='font-size:1.3em' class='btn btn-primary' href='javascript: d.closeAll();'>Cerrar</a></u></h2></p>
-
-    <script type='text/javascript'>
-
-    <!--
-
-        d = new dTree('d');
-				d.add(0,-1,'<style=text-align:left>Inicio</style>');d.add(1,0, '<span style=border-radius:3px;padding:1px;background-color:#D3D3D3;>danielvt@gmail.com</span>','#');d.add(2,1, '<span style=border-radius:3px;padding:1px;background-color:#D3D3D3;>danystatic@hotmail.com</span>','#');document.write(d);
-
-        //-->
-    </script>
-            
-</div>";
-    	return $tree;
-
-          return response()->json(['txt' => '<h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p>']);
+          return response()->json(['txt' => '<h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p>']);
     	// return response()->json(txt : 'I was trying to insert a view, but it has Auth and user Variables. this is pure text');
 
 
