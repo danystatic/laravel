@@ -75,7 +75,7 @@ class ApiController extends Controller
 <h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><h3>Te acuerdas de mi?</h3><p>I was trying to insert a view, but it has Auth and user Variables. this is pure text</p><div class="star-rating">
         <h3>Rate video</h3>
         <div class="rate-stars"></div>
-        </div>', 'page2' => '<h3>Page 2</h3><p>This is something New</p>','page3' => '<h3>Page 3</h3><p>This is something New</p>','page4' => '<h3>Page 4</h3><p>This is something New</p>', 'btn1-txt'=>'Siguiente', 'btn2-txt'=>'Btn2', 'btn3-txt'=>'Btn3', 'btn4-txt'=>'Btn4']);
+        </div>', 'page2' => '<h3>Page 2</h3><p>This is something New</p>','page3' => '<h3>Page 3</h3><p>This is something New</p>','page4' => '<h3>Page 4</h3><p>This is something New</p>','page5' => '<h3>Page 5</h3><p>This is goodbye</p>', 'btn1-txt'=>'Siguiente', 'btn2-txt'=>'Btn2', 'btn3-txt'=>'Go to 4', 'btn4-txt'=>'go to 5', 'btn5-txt'=>'Exit App']);
     	// return response()->json(txt : 'I was trying to insert a view, but it has Auth and user Variables. this is pure text');
 
 
